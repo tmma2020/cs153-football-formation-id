@@ -10,13 +10,16 @@ This repository is for a the class CS153 at Harvey Mudd, a computer vision class
 
 1. Clone the repository
 
-````bash
+```bash
    git clone https://github.com/tmma2020/cs153-football-formation-id.git
    cd cs153-football-formation-id
+```
+
 2. Install python dependencies
+
 ```bash
    pip install -r requirements.txt
-````
+```
 
 ## How to Run
 
@@ -24,9 +27,9 @@ This repository is for a the class CS153 at Harvey Mudd, a computer vision class
 
 ```markdown
 `sample_data` - Example data used to demonstrate functionality
+```
 
 ## Notes
 
 - Full datasets are hosted separately on the teapot server: `/cs/cs153/data/toms_project_data/`.
 - The models for this project were trained on the teapot server.
-```
