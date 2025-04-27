@@ -25,8 +25,6 @@ This repository is for the class CS153 at Harvey Mudd, a computer vision class. 
 
 ## Folder Structure
 
-## Folder Structure
-
 <details>
 <summary><strong>Folder Structure</strong></summary>
 
