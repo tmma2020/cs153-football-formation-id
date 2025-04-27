@@ -28,9 +28,10 @@ This repository is for the class CS153 at Harvey Mudd, a computer vision class. 
 ## Folder Structure
 
 <details>
-<summary><strong>📁 Folder Structure (click to expand)</strong></summary>
+<summary><strong>Folder Structure</strong></summary>
 
 - `sample_data/` — Example data used to demonstrate functionality
+  - `sample_data_collector.ipynb` — Jupyter notebook to collect sample data. Change as needed.
   - `sample_dataset.json` — Metadata file containing the sampled plays
   - `[off_formation]/` — Folder for each sampled offensive formation (e.g., `ACES`, `KINGSSPLIT`, `QUEENS`)
     - `[video_path]/` — Folder containing images for each play
