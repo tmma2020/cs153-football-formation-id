@@ -31,16 +31,29 @@ This repository is for the class CS153 at Harvey Mudd, a computer vision class. 
 - `README.md` — This file
 
 - `requirements.txt` — Python dependencies
+
 - `field_lines_detection/` — Code for detecting field lines. Used to crop the field from the image
+
   - `field_lines_detector.ipynb` — Notebook for detecting field lines and cropping the field
+
+- `formation_detector/` — Code for detecting football formations from player positions
+
+  - `formation_detector.ipynb` — Notebook for detecting and classifying offensive formations
+
 - `sample_data/` — Example data used to demonstrate functionality
-  - `sample_data_collector.ipynb` — Jupyter notebook to collect sample data. Change as needed.
+
+  - `sample_data_collector.ipynb` — Jupyter notebook to collect and organize sample data
   - `sample_dataset.json` — Metadata file containing the sampled plays
   - `[off_formation]/` — Folder for each sampled offensive formation (e.g., `ACES`, `KINGSSPLIT`, `QUEENS`)
     - `[video_path]/` — Folder containing images for each play
       - `sideline_[video_path].png`
       - `endzone_[video_path].png`
       - `tight_[video_path].png`
+
+- `yolo_player_detector/` — Code and outputs for player detection
+  - `player_detector.ipynb` — Notebook to detect players using a YOLOv8 model
+  - `player_bboxes.json` — Detected player bounding boxes for each play
+  - `yolov8n.pt` — Pre-trained YOLOv8n model weights (used for person detection)
 
 </details>
 
