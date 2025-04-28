@@ -5,6 +5,9 @@ This repository is for the class CS153 at Harvey Mudd, a computer vision class. 
 ## Features
 
 - Utilize yard lines to automatically crop the field from the image. Helps to reduce noise and improve the model's performance.
+- Detect players using a YOLOv8 model. We use a pre-trained YOLOv8n model to detect players in the image. The model is trained on the COCO dataset, which includes person detection.
+- Detect formations using a custom model. The model is trained on the sampled data to detect and classify offensive formations based on player positions.
+- Sampled data is organized in a structured format. The data is organized by formation and play, making it easy to access and use for training and testing the model.
 
 ## Installation / Requirements
 
