@@ -4,7 +4,7 @@ This repository is for the class CS153 at Harvey Mudd, a computer vision class. 
 
 ## Features
 
-- Utilize yard lines to automatically crop the field from the image
+- Utilize yard lines to automatically crop the field from the image. Helps to reduce noise and improve the model's performance.
 
 ## Installation / Requirements
 
@@ -32,8 +32,7 @@ This repository is for the class CS153 at Harvey Mudd, a computer vision class. 
 
 - `requirements.txt` — Python dependencies
 - `field_lines_detection/` — Code for detecting field lines. Used to crop the field from the image
-  - `field_lines_detection.ipynb` — Demonstration notebook for detecting field lines and cropping the field
-  - `field_lines_detection.py` — Main code for detecting field lines applied to all images
+  - `field_lines_detector.ipynb` — Notebook for detecting field lines and cropping the field
 - `sample_data/` — Example data used to demonstrate functionality
   - `sample_data_collector.ipynb` — Jupyter notebook to collect sample data. Change as needed.
   - `sample_dataset.json` — Metadata file containing the sampled plays
