@@ -26,6 +26,30 @@ This repository is for the class CS153 at Harvey Mudd, a computer vision class. 
 
 ## How to Run
 
+1. **Organize your data**: The data should be organized in the following format:
+
+   ```
+   data/
+       dataset.json
+       [off_formation]/
+           [video_path]/
+               sideline_[video_path].png
+               endzone_[video_path].png
+               tight_[video_path].png
+   ```
+
+   - `dataset.json` is a metadata file containing the sampled plays. It should be in the same directory as the formation folders.
+   - Each formation folder should contain a subfolder for each video path. Each video path folder should contain the images for that play.
+   - The images should be named `sideline_[video_path].png`, `endzone_[video_path].png`, and `tight_[video_path].png`.
+
+1a. **Sample data (Optional)**: The sample data is organized in the same format as above. The sample data is used to demonstrate functionality and is not a complete dataset. The sample data is located in the `sample_data/` folder.
+
+2. **Run the field lines detection notebook**: The field lines detection notebook will detect the field lines and crop the field from the image. This is done using OpenCV and a custom algorithm to detect the yard lines.
+
+3. **Run the player detection notebook**: The player detection notebook will detect players in the image using a YOLOv8 model. The model is trained on the COCO dataset, which includes person detection.
+
+4. **Run the formation detection notebook**: The formation detection notebook will detect and classify offensive formations based on player positions. The model is trained on the data to detect and classify formations.
+
 ## Folder Structure
 
 <details>
