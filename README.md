@@ -42,7 +42,9 @@ This repository is for the class CS153 at Harvey Mudd, a computer vision class. 
    - Each formation folder should contain a subfolder for each video path. Each video path folder should contain the images for that play.
    - The images should be named `sideline_[video_path].png`, `endzone_[video_path].png`, and `tight_[video_path].png`.
 
-1a. **Sample data (Optional)**: The sample data is organized in the same format as above. The sample data is used to demonstrate functionality and is not a complete dataset. The sample data is located in the `sample_data/` folder.
+1a. **Generate Sample data (Optional)**: The sample data is organized in the same format as above. The sample data is used to demonstrate functionality and is not a complete dataset. The sample data is located in the `sample_data/` folder.
+
+**Update References for Each Notebook as Needed**: The notebooks are set up to run on the sample data. If you want to run the notebooks on your own data, you will need to update the references in each notebook. The references are located at the top of each notebook. You will need to update the paths to point to your own data.
 
 2. **Run the field lines detection notebook**: The field lines detection notebook will detect the field lines and crop the field from the image. This is done using OpenCV and a custom algorithm to detect the yard lines.
 
@@ -88,3 +90,4 @@ This repository is for the class CS153 at Harvey Mudd, a computer vision class. 
 
 - Full datasets are hosted separately on the teapot server: `/cs/cs153/data/toms_project_data/`.
 - The models for this project were trained on the teapot server.
+- Paths in the notebooks are set up to run on the sample data. If you want to run the notebooks on your own machine with your own data, you will need to update the paths in each notebook.
