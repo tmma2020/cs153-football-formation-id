@@ -116,12 +116,15 @@ python full_pipeline.py --resnet_raw --resnet_processed
   - `yolov8n.pt` — Pre-trained YOLOv8n model weights (used for person detection)
 
 - `final_project/` — Full project pipeline for processing Hudl film and classifying football formations
+
   - `full_pipeline.py` — Master script to run the full data processing and classification pipeline
   - `pre_processing.py` — Script to preprocess images (field detection, masking, cropping)
   - `yolo_with_processed_images.py` — Pipeline to detect players and classify formations from processed images
   - `yolo_with_raw_images.py` — Pipeline to detect players and classify formations from raw images
   - `resnet_raw.py` — Train and evaluate ResNet-18 model on raw images
   - `resnet_processed.py` — Train and evaluate ResNet-18 model on processed images
+
+- `McConnell_Final_Project.pdf` — Full project report describing the project process
   </details>
 
 ## Notes
