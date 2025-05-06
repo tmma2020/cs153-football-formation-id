@@ -8,6 +8,7 @@ This repository is for the class CS153 at Harvey Mudd, a computer vision class. 
 - Detect players using a YOLOv8 model. We use a pre-trained YOLOv8n model to detect players in the image. The model is trained on the COCO dataset, which includes person detection.
 - Detect formations using a custom model. The model is trained on the sampled data to detect and classify offensive formations based on player positions.
 - Sampled data is organized in a structured format. The data is organized by formation and play, making it easy to access and use for training and testing the model.
+- Compare formation detection accuracy across both a YOLO model + Random Forest approach and a raw image input ResNet approach.
 
 ## Installation / Requirements
 
@@ -126,7 +127,4 @@ python full_pipeline.py --resnet_raw --resnet_processed
 - Full datasets are hosted separately on the teapot server: `/cs/cs153/data/toms_project_data/`.
 - The models for this project were trained on the teapot server.
 - Paths in the notebooks are set up to run on the sample data. If you want to run the notebooks on your own machine with your own data, you will need to update the paths in each notebook.
-
-```
-
-```
+- The python scripts I used to run on the server are not designed to be as user friendly as the jupyter notebooks that use the sample data. This is because your data may look different and require slightly different processes. As such, the sample notebooks should be used first to understand the processing pipeline.
