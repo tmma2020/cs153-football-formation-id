@@ -52,6 +52,32 @@ This repository is for the class CS153 at Harvey Mudd, a computer vision class. 
 
 4. **Run the formation detection notebook**: The formation detection notebook will detect and classify offensive formations based on player positions. The model is trained on the data to detect and classify formations.
 
+5. **Run the full pipeline or individual components as needed**:  
+   The `final_project/` folder contains all the Python scripts necessary to process and analyze the Hudl dataset. You can control which parts of the pipeline run by setting flags when executing `full_pipeline.py`. Each flag corresponds to a major processing step:
+
+| Flag                 | Description                                                                                      |
+| :------------------- | :----------------------------------------------------------------------------------------------- |
+| `--process`          | Preprocesses the raw Hudl images (field detection, masking, cropping)                            |
+| `--processed`        | Runs YOLOv8x player detection and Random Forest classification on **processed (cropped)** images |
+| `--raw`              | Runs YOLOv8x player detection and Random Forest classification on **raw (uncropped)** images     |
+| `--resnet_raw`       | Trains and evaluates a ResNet-18 model to classify formations directly from **raw images**       |
+| `--resnet_processed` | Trains and evaluates a ResNet-18 model to classify formations directly from **processed images** |
+
+### Example Usage
+
+You can chain flags together to run multiple steps at once:
+
+```bash
+# Example: Preprocess images only
+python full_pipeline.py --process
+
+# Example: Preprocess, then run YOLO + Random Forest on processed images
+python full_pipeline.py --process --processed
+
+# Example: Train and evaluate ResNet models on both raw and processed images
+python full_pipeline.py --resnet_raw --resnet_processed
+
+
 ## Folder Structure
 
 <details>
@@ -91,3 +117,4 @@ This repository is for the class CS153 at Harvey Mudd, a computer vision class. 
 - Full datasets are hosted separately on the teapot server: `/cs/cs153/data/toms_project_data/`.
 - The models for this project were trained on the teapot server.
 - Paths in the notebooks are set up to run on the sample data. If you want to run the notebooks on your own machine with your own data, you will need to update the paths in each notebook.
+```
