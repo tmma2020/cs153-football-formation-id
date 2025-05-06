@@ -79,14 +79,14 @@ python full_pipeline.py --resnet_raw --resnet_processed
 
 ```
 
-## Folder Structure
-
 <details>
 <summary><strong>Folder Structure</strong></summary>
 
 - `README.md` — This file
 
 - `requirements.txt` — Python dependencies
+
+- `.gitignore` — Git ignore rules for project (ignores non-Python files in `final_project/`)
 
 - `field_lines_detection/` — Code for detecting field lines. Used to crop the field from the image
 
@@ -107,11 +107,20 @@ python full_pipeline.py --resnet_raw --resnet_processed
       - `tight_[video_path].png`
 
 - `yolo_player_detector/` — Code and outputs for player detection
+
   - `player_detector.ipynb` — Notebook to detect players using a YOLOv8 model
   - `player_bboxes.json` — Detected player bounding boxes for each play
   - `yolov8n.pt` — Pre-trained YOLOv8n model weights (used for person detection)
 
-</details>
+- `final_project/` — Full project pipeline for processing Hudl film and classifying football formations
+  - `full_pipeline.py` — Master script to run the full data processing and classification pipeline
+  - `pre_processing.py` — Script to preprocess images (field detection, masking, cropping)
+  - `yolo_with_processed_images.py` — Pipeline to detect players and classify formations from processed images
+  - `yolo_with_raw_images.py` — Pipeline to detect players and classify formations from raw images
+  - `resnet_raw.py` — Train and evaluate ResNet-18 model on raw images
+  - `resnet_processed.py` — Train and evaluate ResNet-18 model on processed images
+  - `project_script.py` — Additional experimental script used during development
+  </details>
 
 ## Notes
 
