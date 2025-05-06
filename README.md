@@ -80,6 +80,8 @@ python full_pipeline.py --resnet_raw --resnet_processed
 
 ```
 
+### Project Files
+
 <details>
 <summary><strong>Folder Structure</strong></summary>
 
