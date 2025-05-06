@@ -119,7 +119,6 @@ python full_pipeline.py --resnet_raw --resnet_processed
   - `yolo_with_raw_images.py` — Pipeline to detect players and classify formations from raw images
   - `resnet_raw.py` — Train and evaluate ResNet-18 model on raw images
   - `resnet_processed.py` — Train and evaluate ResNet-18 model on processed images
-  - `project_script.py` — Additional experimental script used during development
   </details>
 
 ## Notes
