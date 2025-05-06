@@ -126,7 +126,7 @@ python full_pipeline.py --resnet_raw --resnet_processed
 
 ## Notes
 
-- Full datasets are hosted separately on the teapot server: `/cs/cs153/data/toms_project_data/`.
+- Full datasets are hosted separately on the teapot server: `/cs/cs153/data/toms_project_data/`. The data was collected from hudl.com
 - The models for this project were trained on the teapot server.
 - Paths in the notebooks are set up to run on the sample data. If you want to run the notebooks on your own machine with your own data, you will need to update the paths in each notebook.
 - The python scripts I used to run on the server are not designed to be as user friendly as the jupyter notebooks that use the sample data. This is because your data may look different and require slightly different processes. As such, the sample notebooks should be used first to understand the processing pipeline.
