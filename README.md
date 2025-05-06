@@ -77,6 +77,7 @@ python full_pipeline.py --process --processed
 # Example: Train and evaluate ResNet models on both raw and processed images
 python full_pipeline.py --resnet_raw --resnet_processed
 
+```
 
 ## Folder Structure
 
@@ -117,4 +118,7 @@ python full_pipeline.py --resnet_raw --resnet_processed
 - Full datasets are hosted separately on the teapot server: `/cs/cs153/data/toms_project_data/`.
 - The models for this project were trained on the teapot server.
 - Paths in the notebooks are set up to run on the sample data. If you want to run the notebooks on your own machine with your own data, you will need to update the paths in each notebook.
+
+```
+
 ```
